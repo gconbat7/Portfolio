@@ -93,7 +93,7 @@ body.dark .txt-topo-site p{
     padding:  10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #1163D0;
+    background-color: #68A4C9;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -101,7 +101,7 @@ body.dark .txt-topo-site p{
 }
 
 .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #1163D0;
+    box-shadow: 0px 0px 8px #68A4C9;
     transform: scale(1.05);
 }
 
@@ -205,8 +205,6 @@ section.topo-do-site .flex{
         top: 30px;
     }
 }
-
-
 
 
 /*ESPECIALIDADES*/
