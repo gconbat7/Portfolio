@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* ESTILO GERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #070707;
+    height: 100vh;
+    transition: .5s;
+}
+
+body.dark{
+    background-color: #e4e4e4;
+}
+
+body.dark .txt-topo-site h1{
+    color: #000;
+}
+
+body.dark .txt-topo-site p{
+    color: #000;
+}
+
+/*LOGO ANIMADA*/
+@keyframes anima-logo {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.07);
+    }
+}
+
+.logo:hover{
+    animation-name: anima-logo;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*ESTILO BOTÃO TOGGLE INICIO*/
+.trilho{
+    width: 80px;
+    height: 40px;
+    background-color: #4d4d4d;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .btn1{
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+    background-color: #c3c3c3;
+}
+
+.trilho.dark .btn1{
+    left: 40px;
+    background-color: #fff;
+}
+/*ESTILO BOTÃO TOGGLE FIM*/
+
+
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding:  10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #1163D0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #1163D0;
+    transform: scale(1.05);
+}
+
+.btn-social  button:hover{
+    box-shadow: 0px 0px 8px #00FF08;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span{
+    color: #fff;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.logo img{
+    width: 133px;
+    height: 117px;
+}
+
+/* 1ª FOTO DO PORTFOLIO*/
+.img-topo-site img {
+    width: 110%;
+    height: 90%;
+    border-radius: 60px 1px 60px;
+    border: none;
+    right:25px;
+}
+
+.img-sobre img{
+    width: 350px;
+    height: 450px;
+    border-radius: 30px;
+    border: none;
+}
+
+
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+
+
+/*ESPECIALIDADES*/
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 40px;
+    color: #1163D0;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 25px;
+}
+
+/*Estilo sobre*/
+section.sobre{
+    padding: 120px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00FF08;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 30px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
